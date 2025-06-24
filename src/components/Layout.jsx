@@ -1,14 +1,11 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Navigation from "./Navigation/Navigation";
 
-const Layout = () => {
+export default function Layout() {
   return (
     <>
       <header>
-        <nav>
-          <NavLink to="/">Home</NavLink>
-          {"  "}
-          <NavLink to="/catalog">Catalog</NavLink>
-        </nav>
+        <Navigation />
       </header>
 
       <main>
@@ -16,6 +13,4 @@ const Layout = () => {
       </main>
     </>
   );
-};
-
-export default Layout;
+}
