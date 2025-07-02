@@ -10,20 +10,20 @@ const getNavLinkClass = (props) => {
 
 export default function Navigation() {
   return (
-    <ul>
-      <li>
-        <img src={travelTrucks} alt="Travel Trucks" />
-      </li>
-      <li>
-        <NavLink to="/" className={getNavLinkClass}>
-          Home
-        </NavLink>
-      </li>
-      <li>
-        <NavLink to="/catalog" className={getNavLinkClass}>
-          Catalog
-        </NavLink>
-      </li>
-    </ul>
+    <div className={css.container}>
+      <img src={travelTrucks} alt="Travel Trucks" />
+      <ul className={css.list}>
+        <li className={css.centeredGroup}>
+          <NavLink to="/" className={getNavLinkClass}>
+            Home
+          </NavLink>
+        </li>
+        <li className={css.navigationGap}>
+          <NavLink to="/catalog" className={getNavLinkClass}>
+            Catalog
+          </NavLink>
+        </li>
+      </ul>
+    </div>
   );
 }

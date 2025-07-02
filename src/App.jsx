@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
-import HomePage from "./pages/HomePage";
-import CatalogPage from "./pages/CatalogPage";
-import CamperDetailsPage from "./pages/CamperDetailsPage";
+import HomePage from "./pages/Home";
+import CatalogPage from "./pages/Catalog";
+import CamperDetailsPage from "./pages/CamperDetails";
 
 import { NavLink } from "react-router-dom";
 

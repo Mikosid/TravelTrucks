@@ -5,3 +5,25 @@
 .active {
   color: orangered;
 }
+
+.container {
+  display: flex;
+  /* Не використовуємо justify-content тут для загального розподілу */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Переконайтеся, що ul займає всю доступну ширину */
+  align-items: center; /* Вирівнювання елементів по центру вертикально, якщо висота різна */
+}
+
+.list {
+  display: flex;
+  margin-left: 450px;
+}
+
+.centeredGroup {
+  margin-right: 32px;
+}
+
+.navigationGap {
+}
